@@ -9,7 +9,7 @@ translator = Translator()
 
 
 # for objects
-def read_position(name_,x_coord,y_coord):
+def read_position(name_,color, x_coord,y_coord):
     x_pos=""
     y_pos=""
     if x_coord<0.5:
@@ -26,7 +26,7 @@ def read_position(name_,x_coord,y_coord):
     if y_coord>0.5:
         y_pos="top"
     
-    sentence= "There is a " + name + " on the " + y_pos + " " + x_pos
+    sentence= "There is a " + color + " " + name + " on the " + y_pos + " " + x_pos
     tts(sentence)
     
 
